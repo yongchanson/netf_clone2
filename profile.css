@@ -57,21 +57,21 @@ body {
     display:flex;
     justify-content: center;
     /* margin:0 30%; */
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap;    
 }
 .prodetail{
     margin-right : 8px;
-    
     /* margin : 8px; */
-    /* vertical-align: middle; */   
+    /* vertical-align: middle; */ 
 }
 .prodetail img{
     border-radius: 6px; 
     width : 10vw;
-    /* height : 10vw; */
+    height : 10vw;
     min-width: 84px;
     min-height: 84px;
+    /* max-width: 200px;
+    max-height: 200px; */
 }
 .proname{
     padding-top:10px;

@@ -17,10 +17,14 @@ body {
     /* width : 100%; */
     /* height:100px; */
 }
+.main{
+    width : 100%;
+    height : 700px;
+}
 .mainimg{
     width : 100%;
     /* height : 42%; */
-    height: 700px;
+    /* height: 700px; */
     /* z-index: -1; */
 }
 .overlay{
@@ -128,8 +132,13 @@ body {
 .categorylist{
     position: absolute;
     top : 550px;
-    width : calc(100% -50px);
+    /* left : 50px; */
+    width : calc(100%);
     padding: 10px 0 10px 3.7%;
+    overflow-x: hidden;
+}
+.category{
+    height:250px;
 }
 .catetitle{
     color: #e5e5e5;
@@ -142,7 +151,8 @@ body {
 }
 .movielist{
     display: flex;
-    overflow-x: hidden;
+    
+    /* overflow-y: auto; */
 }
 .movie{
     padding: 2px;
