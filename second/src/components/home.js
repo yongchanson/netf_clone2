@@ -1,29 +1,14 @@
-// import logo from './logo.svg';
-import './home.css';
+import React from 'react';
+import '../home.css';
+import Header from './Header';
 
-function App() {
+function home() {
   return (
-<body>
-<div class="home">
+    <>
+    <div class="home">
     <img class="mainimg" src="https://occ-0-2219-988.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABfwMqJNGTyJmmO2j1SYmhTnkXs_evVlYQwRWGBrck_YanSF80VISKbFS5ROOIf_Pi4Jb_XrJq-oaEcksBxMQLkoBafg0.webp?r=3de" />
         <div class="overlay">
-            <div class="header">
-                <div class="logo" ><img src="img/logo.png" /></div>
-                <div class="nav">
-                    <div class="navs">홈</div>
-                    <div class="navs">TV 프로그램</div>
-                    <div class="navs">영화</div>
-                    <div class="navs">NEW! 요즘 대세 콘텐츠</div>
-                    <div class="navs">내가 찜한 콘텐츠</div>
-                </div>
-                <div class="menu">
-                    <div class="menus"><i class="fas fa-search fa-2x"></i></div>
-                    <div class="menus"><i class="fas fa-bell fa-2x"></i></div>
-                    <div class="menus"><img src="img/profile.png" /></div>
-                    <div class="arrow"><i class="fas fa-caret-down"></i></div>
-                    
-                </div>
-            </div>    
+            <Header />    
             <div class="banner">
                 <div class="batitle">
                     <img src="img/batitle.png" />
@@ -74,13 +59,10 @@ function App() {
             </div>
         </div>
     </div>
-</div>   
-</body>
+</div>
 
-
-
-
-);
+    </>
+  );
 }
 
-export default App;
+export default home;
