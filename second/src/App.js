@@ -1,21 +1,16 @@
-// import './home.css';
-import React, { Component } from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import App from "./App";
-import { render } from "react-dom";
+// import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import Home from "./components/home";
+import Profile from "./components/profile";
 
-import Invoices from './components/test1.js';
-import Expenses from './components/test2.js';
 
-const rootElement = document.getElementById("root");
-render(
-  <BrowserRouter>
+function App() {
+  return (
     <Routes>
-      <Route path="/" element={<Invoices />} />
-      <Route path="test" element={<Expenses />} />
+      <Route path="/" element={<Home />} />
+      <Route path="/profile" element={<Profile />} />
     </Routes>
-  </BrowserRouter>,
-  rootElement
-);
+  );
+}
 
 export default App;
